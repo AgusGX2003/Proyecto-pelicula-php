@@ -105,7 +105,7 @@ p{
 @media (max-width: 640px) {
 
     body{
-       background-image: url("../img/fondo.jpg");
+       background-image: url("../../../public/img/fondo.jpg");
     } 
     .navMio{
         background-color: white !important;
