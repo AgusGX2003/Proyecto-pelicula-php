@@ -1,96 +1,174 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+  margin: 0;
+  box-sizing: border-box;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
 
 body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  background: black;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+.header {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+.title {
+  font-size: 3rem;
+  background: linear-gradient(94deg, #2203FF, #C40D60);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: uppercase;
   text-align: center;
+  margin-bottom: 2rem;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+.subtitle {
+  color: #fafafa;
+  padding-left: 1rem;
+  margin-bottom: 1rem;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+
+.dropdown-menu{
+    color: white;
+
 }
-.logo.vanilla:hover {
-  filter: drop-shadow(0 0 2em #f7df1eaa);
+
+.uno{
+    margin-top: 10px;
+    margin-bottom: 5% !important;
+   
+}
+
+.dropdown{
+    --bs-nav-link-hover-color: none !important;
+}
+.check{
+   color: white;
+   margin-bottom: 10%;
+}
+/*fondo nav*/
+
+.navMio {
+  width: 100%;
+  background-color: black !important;
+}
+/* finfondo nav*/
+
+.navMio a{
+    color: white; 
+}
+.navbarNavDropdown::hover{
+    color: white !important;
+}
+.p{
+    color: white;
+}
+.negro{
+  background-color: black;
+}
+
+
+
+
+.image {
+  height: 100%;
+  width: 100%;
+  vertical-align: middle;
+  border-radius: .25rem;
+}
+
+.btn {
+  color: #ffffff;
+  padding: 0.8rem;
+  font-size: 14px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  font-weight: 400;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: transparent;
+}
+
+.btn:hover {
+  color: #fafafa;
+  background-color: rgba(255, 255, 255, 0.12);
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cards_item {
+  display: flex;
+  padding: 1rem;
+}
+
+@media (min-width: 40rem) {
+  .cards_item {
+    width: 50%;
+  }
+}
+
+@media (min-width: 56rem) {
+  .cards_item {
+    width: 33.3333%;
+  }
 }
 
 .card {
-  padding: 2em;
+  background-color: #000;
+  border-radius: 0.25rem;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
 }
 
-.read-the-docs {
-  color: #888;
+.card_content {
+  padding: 1rem;
+  background: #000;
+  /* background: linear-gradient(to bottom left, #EF8D9C 40%, #FFC39E 100%); */
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+.card_title {
+  color: #ffffff;
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  margin: 0px;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+.card_text {
+  color: #ffffff;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin-bottom: 1.25rem;    
+  font-weight: 400;
+}
+
+@media (max-width: 640px) {
+
+    body {
+      background-image: url("./public/img/fondo.jpg");
+    } 
+    .navMio {
+      background-color: white !important;
+    }
+    .navMio a {
+      color: black;
+    }
+    .navbarNavDropdown::hover {
+      color: black;
+    }
+
 }
